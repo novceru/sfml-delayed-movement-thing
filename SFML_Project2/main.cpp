@@ -3,7 +3,7 @@
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(800, 600), "Chasing the cursor");
+    sf::RenderWindow window(sf::VideoMode(400, 400), "Chasing the cursor");
     sf::Text displayText;
     sf::Font font_playground;
     if (!font_playground.loadFromFile("assets/fonts/Playground.ttf"))
@@ -22,24 +22,6 @@ int main()
     sf::CircleShape circle(50.f);
     circle.setFillColor(sf::Color(0,100,0,240));
     circle.setOrigin(50, 50);
-    sf::CircleShape circle2(50.f);
-    circle2.setFillColor(sf::Color(0, 100, 0, 200));
-    circle2.setOrigin(50, 50);
-    sf::CircleShape circle3(50.f);
-    circle3.setFillColor(sf::Color(0, 100, 0, 140));
-    circle3.setOrigin(50, 50);
-    sf::CircleShape circle4(50.f);
-    circle4.setFillColor(sf::Color(0, 100, 0, 90));
-    circle4.setOrigin(50, 50);
-    sf::CircleShape circle5(50.f);
-    circle5.setFillColor(sf::Color(0, 100, 0, 30));
-    circle5.setOrigin(50, 50);
-    sf::CircleShape circleGroup[5];
-    circleGroup[0] = circle;
-    circleGroup[1] = circle2;
-    circleGroup[2] = circle3;
-    circleGroup[3] = circle4;
-    circleGroup[4] = circle5;
 
     sf::Vector2f velocity;
     velocity.x = .08;
