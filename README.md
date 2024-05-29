@@ -1,3 +1,3 @@
-read deeeznuts
-C++ & SFML
-circle chasing the cursor
+C++ and SFML
+
+circle object chasing the mouse cursor at a constant velocity
